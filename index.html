@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Boticário</title>
+</head>
+<body>
+    <header>     
+            <img src="./img/BoticarioPreto.png"></img>        
+    </header>
+
+    <main>
+        <!--       
+            https://ionic.io/ionicons/usage   (pegar instalação e colocar no final dp body)
+            https://ionic.io/ionicons     (pegar os icons)
+        -->
+        <div class="menu">
+            <div class="toggle"> <ion-icon name="menu"></ion-icon> </div>
+            
+            <li style="--i:0;--clr:#387ADF;">
+                <a href="pages/construcao.html"><ion-icon name="home"></ion-icon></a>
+            </li>
+            <li style="--i:1;--clr:#E8751A;">
+                <a href="https://srsteglich.github.io/Curriculo-Digital/#" target="_blank"><ion-icon name="document-text"></ion-icon></a>
+            </li>
+            <li style="--i:2;--clr:#ff0000;">
+                <a href="pages/youtube.html"><ion-icon name="logo-youtube"></ion-icon></a>
+            </li>
+            <li style="--i:3;--clr:#25d366;">
+                <a href="https://srsteglich.github.io/Curriculo-Digital/#eusou" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            </li>
+            <li style="--i:4;--clr:black;">
+                <a href="https://srsteglich.github.io/Curriculo-Digital/#eusou" target="_blank"><ion-icon name="mail"></ion-icon></a>
+            </li>
+            <li style="--i:5;--clr:#0a66c2;">
+                <a href="https://www.linkedin.com/in/sergio-r-steglich/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </li>
+            <li style="--i:6;--clr:black;">
+                <a href="https://github.com/srsteglich" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            </li>
+
+
+
+        </div>
+
+    </main>
+
+    <footer>
+        Desenvolvido pelo &copy;SRSistemas - 2024.
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menu');
+        toggle.onclick = function() {
+            menu.classList.toggle('active')
+        }
+    </script>
+
+</body>
+</html>
